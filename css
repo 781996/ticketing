@@ -1,0 +1,101 @@
+/* ticketshop-styles.css */
+
+/* Allgemeine Anpassungen */
+body {
+    font-family: 'Arial', sans-serif; /* Moderne und gut lesbare Schrift */
+    background-color: #f9f9f9; /* Helles Hintergrunddesign */
+    color: #333; /* Textfarbe */
+    margin: 0;
+    padding: 0;
+}
+
+/* Kopfbereich */
+header {
+    background-color: #004d99; /* Dunkles Blau für einen professionellen Look */
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Buttons */
+button, .button {
+    background-color: #007bff; /* Akzentfarbe für Buttons */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover, .button:hover {
+    background-color: #0056b3; /* Dunklerer Blauton beim Hover */
+}
+
+/* Formularfelder */
+input[type="text"], input[type="email"], input[type="password"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Tickets */
+.ticket-container {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-container:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Fußzeile */
+footer {
+    background-color: #004d99;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Medienanpassungen für Mobilgeräte */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.2em;
+    }
+
+    button, .button {
+        font-size: 0.9em;
+    }
+
+    .ticket-container {
+        padding: 15px;
+    }
+}
